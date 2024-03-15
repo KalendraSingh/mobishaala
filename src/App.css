@@ -1,0 +1,115 @@
+
+/* components style here */
+
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  color: #fff;
+}
+
+.bg-container{
+  background-image: url("BgImage/mobishaala.png");
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.main-heading{
+  font-size: 50px;
+  font-style: italic;
+}
+
+.span-style{
+  color: yellow;
+}
+.paragraph{
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.Button{
+  padding: 10px;
+  background-color: red;
+  color: #fff;
+  border-radius: 7px;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.Button-talk{
+  padding: 10px;
+  background-color: #13a865;
+  color: #fff;
+  border-radius: 7px;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.video {
+  width: 560px;
+  height: 315px;
+}
+.button-container{
+  display: none;
+}
+.footer{
+  background-color: red;
+  color: #fff;
+  padding: 10px;
+  display: none;
+}
+/* this is media query for responsive */
+
+@media (max-width: 756px) {
+  .paragraph {
+    font-weight: bold;
+    line-height: 1.5;
+    order: 1;
+  }
+  .main-heading {
+    display: none;
+  }
+  .ul-container {
+    display: none;
+  }
+  .button-container {
+    order: 3;
+  }
+
+  .video {
+    width: 100%; 
+    height: 180px; 
+    max-width: 560px;
+  }
+  .button-container{
+    display: block;
+    text-align: center;
+  }
+  .destop{
+    display: none;
+  }
+  .container{
+    padding: 15px;
+  }
+  .footer{
+    background-color: red;
+    color: #fff;
+    padding: 10px;
+    display: block;
+  }
+}
